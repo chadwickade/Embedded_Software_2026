@@ -1,0 +1,51 @@
+# Git requires the filename .gitignore: an exception to the embsw file prefix.
+# Ignore reproducible outputs only; keep authored sources and retained evidence.
+
+# Chapter and main-document LaTeX auxiliary files.
+/embsw*.aux
+
+# Main-document bibliography, glossary, index, and navigation outputs.
+/embswManual.acn
+/embswManual.acr
+/embswManual.alg
+/embswManual.bbl
+/embswManual.blg
+/embswManual.glg
+/embswManual.glo
+/embswManual.gls
+/embswManual.glsdefs
+/embswManual.idx
+/embswManual.ilg
+/embswManual.ind
+/embswManual.ist
+/embswManual.lof
+/embswManual.log
+/embswManual.lot
+/embswManual.out
+/embswManual.toc
+/embswManual.xdy
+/embswManual.fdb_latexmk
+/embswManual.fls
+/embswManual.synctex
+/embswManual.synctex.gz
+
+# Compiled architecture book; other PDFs may be source material or evidence.
+# /embswManual.pdf
+
+# Recreated build transcripts and automated inspection outputs.
+/embswBuildTranscript.txt
+/embswFirstPass.txt
+/embswRenameBuild.txt
+/embswInspection.json
+/embswReview/
+
+# Python-generated caches.
+__pycache__/
+*.py[cod]
+
+# Windows-generated folder metadata.
+Thumbs.db
+desktop.ini
+
+# Deliberately keep .tex, .bib, .cls, .bst, scripts, reviewed reports,
+# embswTemplateManifest.json, package-install records, and product evidence.

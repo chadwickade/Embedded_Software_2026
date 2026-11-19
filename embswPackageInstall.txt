@@ -1,0 +1,7 @@
+Warning: --install: this option has been deprecated; it will be removed from a future version of MiKTeX
+Warning: --install: this option has been deprecated; it will be removed from a future version of MiKTeX
+Warning: --install: this option has been deprecated; it will be removed from a future version of MiKTeX
+Warning: --install: this option has been deprecated; it will be removed from a future version of MiKTeX
+Warning: --install: this option has been deprecated; it will be removed from a future version of MiKTeX
+
+Sorry, but: listings: package is already installed

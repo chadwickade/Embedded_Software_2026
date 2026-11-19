@@ -1,0 +1,34 @@
+\chapter{Document History}
+\ChapterLabel{DocumentHistory}
+\index{document history}
+\section{Chapter Responsibility}
+\label{Section:DocumentHistoryResponsibility}
+Preserve the evolution of the project document and distinguish approval states.
+\noindent\textbf{Expected result:} Traceable changes with explicit human disposition.
+
+\section{Project Draft History}
+\begin{tabularx}{\linewidth}{L{2.6cm}L{2.0cm}Y}
+\caption{Document Update History\label{Table:DocumentHistory}}\\
+\toprule Date / version & State & Change and location\\\midrule
+\endfirsthead
+\toprule Date / version & State & Change and location\\\midrule
+\endhead
+November 19, 2026 / 0.2 & Name confirmed; draft pending & Changed the
+project name to \ProjectName\ at the requester's direction. Namespace remains
+\texttt{embsw}. See \hyperref[Section:ProjectNameUpdate]{the decision} and
+\hyperref[Section:ProjectRenamePrompt]{the interaction record}.\\
+November 11, 2026 / 0.1 & Draft; acceptance pending & OpenAI Codex initialized
+the separate project with the requester-confirmed name, namespace, default
+workflow, and Embedded Systems profile. See
+\hyperref[Section:InitializationDecisions]{decisions},
+\hyperref[Section:InitializationGaps]{gaps}, and
+\hyperref[Section:InitializationPrompt]{AI interaction}.\\
+\bottomrule\end{tabularx}
+\section{Template Provenance}
+This book derives from ArchitectureDesignTemplate version 2.33. Its directory is:
+\begin{center}\texttt{ArchitectureDesignTemplate-2.33}\end{center}
+Its history is retained in the unchanged
+template and is not presented as project approval history. Template attribution
+remains in \hyperref[Chapter:TemplateAttribution]{the front matter} and
+\ChapterRef{DocumentGuide}. The source-file hash inventory is
+\texttt{embswTemplateManifest.json}. No project baseline has yet been accepted.

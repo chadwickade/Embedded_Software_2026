@@ -1,0 +1,22 @@
+\chapter{Implementation}
+\ChapterLabel{Implementation}
+\section{Chapter Responsibility}
+\label{Section:ImplementationResponsibility}
+Make the architecture reproducible through concrete implementation guidance.
+
+\noindent\textbf{Expected result:} A repeatable path from design to a working implementation.
+
+\section{How to Use This Chapter}
+Document the selected technology baseline, build and run instructions, coding conventions that enforce architecture, configuration, and definition of done. Keep design rationale in Architecture Overview.
+\section{Project Draft Status}
+No product language, RTOS, BSP, HAL, SDK, compiler, linker, build variant, or image format is selected. See \hyperref[Question:Q-06]{Q-06}.
+\section{Product Toolchain and Implementation Baseline}
+\label{Question:Q-06}
+\par\noindent\textbf{Open question Q-06.} Identify firmware layers, language, RTOS or operating system, bootloader, BSP, HAL, SDK, compiler, linker, libraries, generators, programming tools, configurations, image formats, and exact product build/test commands. Owner: project requester, pending delegation. Status: Open.
+
+\section{Architecture Document Build}
+\label{Section:ProjectDocumentBuild}
+Run \texttt{.\textbackslash embswBuild.ps1 -Action pdf} here to produce
+\texttt{embswManual.pdf}. The script locates MiKTeX and Perl, then runs the
+complete LaTeX, BibTeX, glossary, and index sequence.
+Use \texttt{-InstallMissingPackages} only for authorized setup.

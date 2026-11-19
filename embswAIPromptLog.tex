@@ -1,0 +1,41 @@
+\chapter{AI Prompt Log}
+\ChapterLabel{AIPromptLog}
+\section{Chapter Responsibility}
+\label{Section:AIPromptLogResponsibility}
+Preserve the provenance of material AI assistance and its human review.
+
+\noindent\textbf{Expected result:} An auditable account of how AI contributed to the engineering record.
+
+\section{How to Use This Appendix}
+Use this log when AI assistance materially affects requirements, architecture, code, tests, or release evidence. Record enough context for a reviewer to understand the input, output, assumptions, and human corrections.
+
+\section{Initialization Interaction - November 11, 2026}
+\label{Section:InitializationPrompt}
+Tool: Codex desktop; agent: OpenAI Codex. Exact runtime model identifier was
+not independently observed. The requester instructed AIS-02 initialization
+from template 2.33 into a separate ArchitectureDesign directory, preservation
+of the template, a facts/gaps/files/checks proposal before dependent edits,
+owned unresolved questions, separate TikZ sources and trace links, and a full
+build with PDF inspection. Git initialization and publication require later
+acceptance and authorization; later changes require branches and pull requests.
+
+After the proposal, the requester stated: ``Project name will be
+Embedded\_Software and the namespace will be embsw. Use the default for the rest
+and include the Embedded Systems profile.'' This confirms the name, namespace,
+profile inclusion, and default document workflow. It does not supply product
+scope, hardware facts, test evidence, or release approval. The requester is
+the initial owner of unresolved questions pending delegation. A complete draft
+is prepared with core chapters and profile guidance; unsupported service-request
+examples and PASS/Done records are removed. Human review of the result is pending.
+See \hyperref[Section:InitializationDecisions]{the decision record},
+\hyperref[Section:InitializationGaps]{the gap register}, and
+\hyperref[Section:ProjectDocumentBuild]{document build instructions}.
+
+\section{Project Rename - November 19, 2026}
+\label{Section:ProjectRenamePrompt}
+The requester asked to change the project name to Embedded\_Software\_2026.
+OpenAI Codex updated the project name, PDF metadata, current name references,
+document date, and revision. The \texttt{embsw} namespace, original initialization
+quotation, and template provenance are preserved. See
+\hyperref[Section:ProjectNameUpdate]{the name-change decision}.
+No Git repository exists; this remains a local pre-publication draft change.

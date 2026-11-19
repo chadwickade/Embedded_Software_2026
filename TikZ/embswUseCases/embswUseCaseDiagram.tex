@@ -1,0 +1,9 @@
+\begin{tikzpicture}[
+box/.style={draw=embswBlue,fill=embswLightBlue,align=center,text width=4cm,minimum height=1.4cm,font=\small},
+flow/.style={->,>=Stealth,draw=embswGray}]
+\node[box] (scope) {\hyperref[Question:Q-01]{Q-01}\\Purpose and scope\\Owner: requester\\Open};
+\node[box,right=1cm of scope] (boundary) {\hyperref[Question:Q-03]{Q-03}\\Boundary and actors\\Owner: requester\\Open};
+\node[box,below=0.7cm of boundary] (tests) {\hyperref[Question:Q-11]{Q-11}\\Acceptance evidence\\Owner: requester\\Open};
+\draw[flow] (scope.east) -- (boundary.west);
+\draw[flow] (boundary.south) -- (tests.north);
+\end{tikzpicture}

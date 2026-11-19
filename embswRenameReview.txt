@@ -1,0 +1,14 @@
+Project rename to Embedded_Software_2026, November 19, 2026.
+{
+  "title": "Embedded_Software_2026 - System and Software Architecture Design",
+  "pages": 106,
+  "internal_links": 668,
+  "broken_links": [],
+  "log_issues": [],
+  "namespace": "embsw",
+  "review_pages": [
+    5,
+    21
+  ]
+}
+Original initialization history preserved. Git not initialized; publication remains pending.

@@ -1,0 +1,89 @@
+Embedded_Software - AIS-02 initialization review
+Document date: November 11, 2026
+Disposition: Draft; human acceptance and publication authorization pending.
+
+Confirmed input
+- Source: ArchitectureDesignTemplate-2.33, preserved as the reusable master.
+- Destination: ArchitectureDesign (B).
+- Project name: Embedded_Software. File namespace: embsw.
+- Embedded Systems profile: Applicable, at the requester's explicit direction.
+- Defaults: retain the template's chapter structure and authoring workflow;
+  project requester owns unresolved questions pending delegation.
+- Initial project document version: 0.1. Template provenance version: 2.33.
+
+Changes
+- Instantiated all 18 core chapters and seven appendices, with front matter,
+  glossary, bibliography, separate TikZ sources, and platform build scripts.
+- Applied embsw names to project files and all active source inclusions.
+- Retained upstream cornell.cls and IEEEtran.bst unchanged; documented naming
+  exceptions for these and AGENTS.md/SKILL.md discovery files.
+- Removed service-request sample stories, requirements, use cases, design,
+  tests, PASS/Done records, and supposed implementation versions from the
+  project book. Reserved their example IDs against future reuse.
+- Retained reusable guidance, authoring requirements, template attribution,
+  AI Skills and execution workflow. Omitted unrelated slide decks and legacy
+  Graphviz, raster, EPS and Visio examples from the build closure.
+- Added 12 linked, owned questions in their authoritative chapters, with a
+  central navigation register, resolution gates, prompt log and draft history.
+- Recorded conditional Git publication and subsequent branch/PR policy in the
+  Development Plan. No project Git repository, commit, remote or push created.
+- Added one-time initialization provenance and repeatable inspection scripts.
+
+Execution and evidence
+- One actual agent; sequential coordination, development, and self-review.
+  No independent review, stakeholder validation, or product conformance claimed.
+- embswTemplateManifest.json: SHA-256 inventory of all 124 supplied template
+  files, captured before source initialization.
+- Source preflight: all 124 template files unchanged; no namespace violations;
+  no missing input files; all seven TikZ inclusion paths match their owners;
+  no missing explicit LaTeX reference targets.
+- Existing MiKTeX 26.5 located outside PATH. Missing packages required approved
+  installation. Build script adds existing MiKTeX and Perl locations only to
+  its process PATH; it does not change persistent environment settings.
+- Normal build: .\embswBuild.ps1 -Action pdf
+- Authorized dependency setup: .\embswBuild.ps1 -Action pdf -InstallMissingPackages
+- Build evidence: embswBuildTranscript.txt and embswManual.log.
+- Automated inspection: run embswInspect.py using Python with pypdf and Pillow;
+  Poppler pdftoppm must be on PATH. Results: embswInspection.json and embswReview/.
+- Complete normal platform build: PASS. Three LaTeX passes, BibTeX,
+  makeglossaries, and makeindex succeeded with all chapters included.
+- Final output: embswManual.pdf, document version 0.1, 104 pages.
+- Final log: no fatal errors, undefined references/citations, duplicate labels,
+  missing files, overfull/underfull boxes, or float layout warnings.
+- PDF inspection: all 662 internal hyperlink destinations resolve; all 12
+  owned question labels exist; all seven separate TikZ inclusions conform.
+- Visual review: full-book contact sheets reviewed during layout refinement;
+  after final reflow, the affected pages and all seven final diagram pages
+  were rechecked. No clipping, connector-label overlap, or diagram routing
+  defect was observed. Implementation now ends on its chapter page.
+- Every final PDF page was rendered. Final rendering evidence is in
+  embswReview/embsw3832ed6a2909/. Final diagram pages: 14, 15, 17, 33, 70, 94, 95.
+  Earlier render directories retain intermediate inspection evidence.
+- Final source preservation: all 124 template files still match their hashes;
+  no project namespace violations or missing source inclusions were found.
+- MiKTeX emits a maintenance notice that updates have not been checked.
+  The build succeeds; no unrelated distribution-wide update was performed.
+- Human acceptance, independent human review, and publication remain pending.
+
+Unresolved decisions - owner: project requester, pending delegation
+Q-01: Product purpose, users, capabilities, exclusions, environment and release.
+Q-02: Named owners, organization, stakeholders, reviewers and authorities.
+Q-03: Hardware/software boundary, actors, interfaces and external dependencies.
+Q-04: Measurable quality targets, constraints and acceptance conditions.
+Q-05: Platform class, processors, boards, hardware revisions and peripherals.
+Q-06: Firmware layers, language, operating system, toolchain, build and tests.
+Q-07: Timing, resource, power, thermal budgets and measurement conditions.
+Q-08: Boot, update, recovery, diagnostics, provisioning, service and lifecycle.
+Q-09: Safety, security, environmental, regulatory and additional profile needs.
+Q-10: Controlled project evidence, including hardware and interface authorities.
+Q-11: Verification and validation owners, methods, fixtures, criteria and evidence.
+Q-12: Acceptance, publication authorization, repository URL/visibility and review policy.
+
+Review boundary
+The complete document is an initialized architecture draft, not a completed
+product specification. Product-dependent design waits for the relevant owned
+questions. Product tests, requirement coverage, verification, validation,
+certification, release, and publication have not been approved or claimed.
+After acceptance and explicit publication authorization, initialize Git in B,
+commit sources on main, and push to the repository the requester specifies.
+Every subsequent change uses a branch and pull request.

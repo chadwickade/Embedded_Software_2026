@@ -1,0 +1,101 @@
+\chapter{Development Plan}
+\ChapterLabel{DevelopmentPlan}
+\section{Chapter Responsibility}
+\label{Section:DevelopmentPlanResponsibility}
+Define how the project is governed, planned, reviewed, and changed.
+
+\noindent\textbf{Expected result:} An actionable plan with visible ownership and decision gates.
+
+\section{How to Use This Chapter}
+Describe governance, roles, milestones, change control, and risks. Adapt the plan to the lifecycle the team will actually follow.
+
+\section{Initialization Decisions}
+\label{Section:InitializationDecisions}
+The requester confirmed \ProjectName\ and the \texttt{embsw} file namespace,
+requested defaults for other initialization choices, and directed inclusion of
+the Embedded Systems profile on November 11, 2026. The initial document version
+is 0.1; version 2.33 identifies the source template, not a product release.
+The requester is the initial document owner and decision contact pending
+delegation. Organization and named role assignments remain unresolved.
+These confirmations authorize draft initialization; acceptance of this book,
+product baselines, and publication remain pending.
+
+\section{Domain Profile Selection}
+\label{Section:DevelopmentPlanProfiles}
+\begin{tabularx}{\linewidth}{L{3.1cm}L{2.3cm}Y}
+\caption{Project Domain Profile Decisions\label{Table:ProjectDomainProfiles}}\\
+\toprule Profile & Status & Rationale, owner, and date\\\midrule
+\endfirsthead
+\toprule Profile & Status & Rationale, owner, and date\\\midrule
+\endhead
+\hyperref[Chapter:EmbeddedSystemsProfile]{Embedded Systems} & Applicable &
+Included by explicit requester direction on November 11, 2026. Decision owner:
+project requester. Platform class and hardware revisions remain open in
+\hyperref[Question:Q-05]{Q-05}; inclusion does not establish hardware facts.\\
+\bottomrule\end{tabularx}
+No other domain profile is provided in the supplied template. Additional
+domain or assurance tailoring remains subject to \hyperref[Question:Q-09]{Q-09}.
+
+\section{Governance and Change Control}
+\label{Section:ProjectChangeControl}
+Codex is the AI tool used for this initialization. One agent performs
+\texttt{aiaCoordinator} and \texttt{aiaDeveloper} responsibilities sequentially,
+then performs self-review. No independent agent review is claimed.
+The requester retains acceptance, scope, architecture, safety, security,
+evidence, validation, and release decisions until named authorities are assigned.
+Resolve each material question before dependent product design or implementation.
+
+After the requester accepts the initialized book and explicitly authorizes
+publication, initialize Git in this project directory, commit the sources on
+\texttt{main}, and push to the repository the requester specifies.
+Every later change uses a branch and pull request. Repository URL, visibility,
+reviewers, and branch-protection settings remain undecided; see
+\hyperref[Question:Q-12]{Q-12}. No Git repository or remote is created during
+this draft initialization.
+
+\section{Initialization Gap Register}
+\label{Section:InitializationGaps}
+All questions below have status Open and are owned by the project requester
+pending delegation. A question is resolved only by supported evidence and an
+authorized disposition. Location links identify the authoritative question;
+the register does not duplicate its definition.
+\begin{tabularx}{\linewidth}{L{1.8cm}YL{4.3cm}}
+\caption{Owned Initialization Questions\label{Table:InitializationQuestions}}\\
+\toprule Question & Subject & Resolution gate\\\midrule
+\endfirsthead
+\toprule Question & Subject & Resolution gate\\\midrule
+\endhead
+\hyperref[Question:Q-01]{Q-01} & Purpose and product scope & Before stories and requirements\\
+\hyperref[Question:Q-02]{Q-02} & Stakeholders and approval roles & Before stakeholder approval\\
+\hyperref[Question:Q-03]{Q-03} & Boundary and interfaces & Before allocations and contracts\\
+\hyperref[Question:Q-04]{Q-04} & Quality targets and constraints & Before measurable obligations\\
+\hyperref[Question:Q-05]{Q-05} & Platform and hardware revisions & Before hardware-dependent design\\
+\hyperref[Question:Q-06]{Q-06} & Firmware and toolchain & Before implementation baseline\\
+\hyperref[Question:Q-07]{Q-07} & Timing, resource, and power budgets & Before feasibility claims\\
+\hyperref[Question:Q-08]{Q-08} & Boot, update, recovery, and service & Before lifecycle design\\
+\hyperref[Question:Q-09]{Q-09} & Safety, security, and standards & Before assurance decisions\\
+\hyperref[Question:Q-10]{Q-10} & Controlled source evidence & Before derived product facts\\
+\hyperref[Question:Q-11]{Q-11} & Verification and validation plan & Before evidence sufficiency\\
+\hyperref[Question:Q-12]{Q-12} & Publication and repository & Before Git initialization and push\\
+\bottomrule\end{tabularx}
+
+\section{Stakeholders and Approval Roles}
+\label{Question:Q-02}
+\par\noindent\textbf{Open question Q-02.} Who are the users, document owner, organization, architect, hardware and firmware owners, verification and validation owners, reviewers, and approval authorities? The requester is the initial contact under the requested defaults. Owner: project requester, pending delegation. Status: Open.
+\section{Publication Decision}
+\label{Question:Q-12}
+\par\noindent\textbf{Open question Q-12.} Will the requester accept this initialized project and authorize publication? Supply the repository URL, visibility, and review policy before publication. The initial source commit uses main; every later change uses a branch and pull request. Owner: project requester, pending delegation. Status: Open.
+\section{Planning Estimate and Review Gates}
+AIS-01 planning ranges are 8--16k tokens for source initialization, 5--12k for
+supported drafting and trace review, and 4--10k for build and visual review.
+They exclude product design and tool installation and are not measured usage.
+One agent works sequentially on shared registers. The draft gate checks naming,
+evidence boundaries, links, compilation, and PDF layout. Product baselines and
+publication require separate human decisions.
+
+\section{Project Name Update}
+\label{Section:ProjectNameUpdate}
+On November 19, 2026, the requester changed the project name from
+Embedded\_Software to \ProjectName. The file namespace remains
+\texttt{embsw}. This metadata update is document version 0.2; initial draft
+acceptance and publication authorization remain pending.
